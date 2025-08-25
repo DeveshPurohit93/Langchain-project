@@ -1,0 +1,10 @@
+LangChain is a framework for building applications with LLMs through composable components.
+This short sample demonstrates the core ideas: load documents, split into chunks, vectorize,
+retrieve relevant chunks for a question, and generate a short answer that cites the retrieved passages.
+
+Key points:
+- Document loaders provide text to the system.
+- Text splitters chunk long documents so retrieval can be more precise.
+- Embeddings (or TF-IDF vectors here) map text to vectors for similarity search.
+- A retriever finds the most relevant chunks for a query.
+- An LLM (mock here) synthesizes a final answer using retrieved context.
